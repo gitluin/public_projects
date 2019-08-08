@@ -1,6 +1,6 @@
 # Public Projects
 This is a repository of projects that I think more people might find useful. You are free to clone them as you see fit.
-Correctly contained are:
+Currently contained are:
 
 * Excel CtoI
  
