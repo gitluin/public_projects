@@ -1,5 +1,5 @@
 # Public Projects
-This is a repository of projects that I think more people might find useful. You are free to clone them as you see fit.
+This is a repository of mini projects that I think more people might find useful. You are free to clone them as you see fit.
 Currently contained are:
 
 * Excel CtoI
