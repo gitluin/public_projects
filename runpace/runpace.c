@@ -4,25 +4,15 @@
 #include <math.h>
 
 int
-slen(const char* str){
-	int i = 0;
-
-	while (*str){ str++; i++; }
-
-	return i;
-}
-
-int
 main(int argc, char* argv[]) {
-	float hms[3];
-	float miles, pace, pace_min, pace_sec;
+	float miles, pace, pace_min, pace_sec, hms[3];
 	char* token;
 	char time[5], pace_str[5], mile_str[4];
 	char delim[2] = ":";
 	int i = 0;
 
 	if (argc != 3){
-		printf("Please provide 2 arguments: [HH:MM:SS] and [Miles]!\n");
+		printf("Please provide 2 arguments: \"HH:MM:SS\" and Miles!\n");
 		return 0;
 	}
 
@@ -32,7 +22,6 @@ main(int argc, char* argv[]) {
 
 	token = strtok(time, delim);
 	while (token){
-
 		if (i <= 3){
 			hms[i] = strtof(token, NULL);
 
