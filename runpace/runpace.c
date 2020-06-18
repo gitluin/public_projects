@@ -7,7 +7,7 @@ int
 main(int argc, char* argv[]){
 	float miles, pace, pace_min, pace_sec, hms[3];
 	char* token;
-	char time[5], pace_str[5], mile_str[4];
+	char time[9], pace_str[5], mile_str[4];
 	char delim[2] = ":";
 	int i = 0;
 
@@ -21,13 +21,8 @@ main(int argc, char* argv[]){
 	miles = strtof(mile_str, NULL);
 
 	token = strtok(time, delim);
-	while (token){
-		if (i <= 3){
-			hms[i] = strtof(token, NULL);
-
-		} else {
-			break;
-		}
+	while (i <= 3 && token){
+		hms[i] = strtof(token, NULL);
 
 		token = strtok(NULL, delim);
 		i++;
