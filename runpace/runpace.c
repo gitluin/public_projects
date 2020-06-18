@@ -4,7 +4,7 @@
 #include <math.h>
 
 int
-main(int argc, char* argv[]) {
+main(int argc, char* argv[]){
 	float miles, pace, pace_min, pace_sec, hms[3];
 	char* token;
 	char time[5], pace_str[5], mile_str[4];
